@@ -1,0 +1,59 @@
+<div>
+
+  <md-sidenav-container>
+    <md-sidenav mode="side" opened="true">
+      <h2> Simon Krafft </h2>
+      <md-divider></md-divider>
+      <md-nav-list>
+        <md-list-item (click)="toggleProjectsList()">
+          <md-icon md-list-icon>build </md-icon>
+          <span> &nbsp; PROJECTS </span>
+          <span class="example-spacer"></span>
+          <md-icon *ngIf="!projectsListActive"> expand_more </md-icon>
+          <md-icon *ngIf="projectsListActive"> expand_less </md-icon>
+        </md-list-item>
+        <ng-container *ngIf="projectsListActive">
+          <md-list-item *ngFor="let project of projects" class="sub-list" [class.selected]="project === selectedItem" (click)="onSelect(project)"[@listAnimation]="''">
+            <span><span style="padding-left:40px"> ○ {{project}} </span></span>
+          </md-list-item>
+        </ng-container>
+        <md-list-item (click)="toggleJobsList()">
+          <md-icon md-list-icon>work</md-icon>
+          <span> &nbsp; JOB HISTORY </span>
+          <span class="example-spacer"></span>
+          <md-icon *ngIf="!jobsListActive"> expand_more </md-icon>
+          <md-icon *ngIf="jobsListActive"> expand_less </md-icon>
+        </md-list-item>
+        <ng-container *ngIf="jobsListActive">
+          <md-list-item *ngFor="let job of jobs" class="sub-list" [class.selected]="job === selectedItem" (click)="onSelect(job)" [@listAnimation]="''">
+            <span><span style="padding-left:40px"> ○ {{job}} </span></span>
+          </md-list-item>
+        </ng-container>
+        <md-list-item (click)="toggleSkillsList()">
+          <md-icon md-list-icon>list</md-icon>
+          <span> &nbsp; SKILLS </span>
+          <span class="example-spacer"></span>
+          <md-icon *ngIf="!skillsListActive"> expand_more </md-icon>
+          <md-icon *ngIf="skillsListActive"> expand_less </md-icon>
+        </md-list-item>
+        <ng-container *ngIf="skillsListActive">
+          <md-list-item *ngFor="let skill of skills" [class.selected]="skill === selectedItem" (click)="onSelect(skill)" class="sub-list" [@listAnimation]="''">
+            <span><span style="padding-left:40px"> ○ {{skill}} </span></span>
+          </md-list-item>
+        </ng-container>
+      </md-nav-list>
+    </md-sidenav>
+
+    <div class="header">
+      <span class="title"> Computer Engineer | McGill University</span>
+      <span class="example-spacer"></span>
+      <button md-button class="float-right">RESUME</button>
+      <button md-button class="float-right">LINKEDIN</button>
+      <button md-button class="float-right">CONTACT ME</button>
+    </div>
+
+    <div class="content">
+    </div>
+
+  </md-sidenav-container>
+</div>

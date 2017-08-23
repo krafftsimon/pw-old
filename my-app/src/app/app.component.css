@@ -1,0 +1,68 @@
+
+div {
+  height: 100vh;
+}
+md-sidenav-container {
+  height: 100%;
+  background-color: #d6d6d6;
+}
+
+md-sidenav {
+  width: 230px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.header {
+  height: 100px;
+  background-color: #691A99;
+  padding: 20px;
+  box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 1);
+}
+
+md-toolbar {
+
+}
+
+h2 {
+  margin: 20px;
+}
+
+.title {
+  margin: 20px;
+  font-size: 36px;
+  display: inline-block;
+}
+
+.selected {
+  border-right: 4px solid #68EFAD;
+}
+
+button {
+  margin: 30px 0;
+}
+
+md-list-item {
+
+}
+
+.float-right {
+  float: right;
+
+}
+
+.sub-list {
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  margin: 30px auto;
+  width: 95%;
+  min-height: 400px;
+  background-color: white;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
