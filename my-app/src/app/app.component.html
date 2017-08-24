@@ -1,10 +1,10 @@
-<div>
-
+<div class="container">
   <md-sidenav-container>
     <md-sidenav mode="side" opened="true">
-      <h2> Simon Krafft </h2>
+      <span class="name"> <h2> Simon Krafft </h2> </span>
       <md-divider></md-divider>
       <md-nav-list>
+
         <md-list-item (click)="toggleProjectsList()">
           <md-icon md-list-icon>build </md-icon>
           <span> &nbsp; PROJECTS </span>
@@ -12,11 +12,18 @@
           <md-icon *ngIf="!projectsListActive"> expand_more </md-icon>
           <md-icon *ngIf="projectsListActive"> expand_less </md-icon>
         </md-list-item>
+
         <ng-container *ngIf="projectsListActive">
-          <md-list-item *ngFor="let project of projects" class="sub-list" [class.selected]="project === selectedItem" (click)="onSelect(project)"[@listAnimation]="''">
-            <span><span style="padding-left:40px"> ○ {{project}} </span></span>
+          <md-list-item *ngFor="let project of projects"
+                        class="sub-list"
+                        [class.selected]="project === selectedItem"
+                        (click)="onSelect(project)"
+                        [@listAnimation]="''"
+                        [routerLink]="project.link">
+            <span><span style="padding-left:40px"> ○ {{project.name}} </span></span>
           </md-list-item>
         </ng-container>
+
         <md-list-item (click)="toggleJobsList()">
           <md-icon md-list-icon>work</md-icon>
           <span> &nbsp; JOB HISTORY </span>
@@ -24,11 +31,18 @@
           <md-icon *ngIf="!jobsListActive"> expand_more </md-icon>
           <md-icon *ngIf="jobsListActive"> expand_less </md-icon>
         </md-list-item>
+
         <ng-container *ngIf="jobsListActive">
-          <md-list-item *ngFor="let job of jobs" class="sub-list" [class.selected]="job === selectedItem" (click)="onSelect(job)" [@listAnimation]="''">
-            <span><span style="padding-left:40px"> ○ {{job}} </span></span>
+          <md-list-item *ngFor="let job of jobs"
+                        class="sub-list"
+                        [class.selected]="job === selectedItem"
+                        (click)="onSelect(job)"
+                        [@listAnimation]="''"
+                        [routerLink]="job.link">
+            <span><span style="padding-left:40px"> ○ {{job.name}} </span></span>
           </md-list-item>
         </ng-container>
+
         <md-list-item (click)="toggleSkillsList()">
           <md-icon md-list-icon>list</md-icon>
           <span> &nbsp; SKILLS </span>
@@ -36,11 +50,18 @@
           <md-icon *ngIf="!skillsListActive"> expand_more </md-icon>
           <md-icon *ngIf="skillsListActive"> expand_less </md-icon>
         </md-list-item>
+
         <ng-container *ngIf="skillsListActive">
-          <md-list-item *ngFor="let skill of skills" [class.selected]="skill === selectedItem" (click)="onSelect(skill)" class="sub-list" [@listAnimation]="''">
-            <span><span style="padding-left:40px"> ○ {{skill}} </span></span>
+          <md-list-item *ngFor="let skill of skills"
+                        [class.selected]="skill === selectedItem"
+                        (click)="onSelect(skill)"
+                        class="sub-list"
+                        [@listAnimation]="''"
+                        [routerLink]="skill.link">
+            <span><span style="padding-left:40px"> ○ {{skill.name}} </span></span>
           </md-list-item>
         </ng-container>
+
       </md-nav-list>
     </md-sidenav>
 
@@ -52,7 +73,8 @@
       <button md-button class="float-right">CONTACT ME</button>
     </div>
 
-    <div class="content">
+    <div class="wrapper">       <!-- position relative, need to resize router outlet elements -->
+      <router-outlet></router-outlet>  <!-- position absolute -->
     </div>
 
   </md-sidenav-container>
