@@ -13,7 +13,7 @@ export class AppComponent {
   projectsListActive: boolean = false;
   jobsListActive: boolean = false;
   skillsListActive: boolean = false;
-  projects: Submenu[] = [{name: "proj1", link: "/project1"}, {name: "proj2", link: "/project2"}, {name: "proj3", link: "/project3"}, {name: "proj4", link: "/project4"}];
+  projects: Submenu[] = [{name: "Web App", link: "/project1"}, {name: "Java Mini Game", link: "/project2"}, {name: "Pipelined Processor", link: "/project3"}, {name: "RFID tag", link: "/project4"}];
   jobs: Submenu[] = [{name: "job1", link: "/job1"}, {name: "job2", link: "/job2"}, {name: "job3", link: "/job3"}, {name: "job4", link: "/job4"}];
   skills: Submenu[] = [{name: "skill1", link: "/skill1"}, {name: "skill2", link: "/skill2"}, {name: "skill3", link: "/skill3"}, {name: "skill4", link: "/skill4"}];
   selectedItem: string;

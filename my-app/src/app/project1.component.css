@@ -1,29 +1,60 @@
 
-#div1 {
+#divtext1 {
   background-color: white;
+  max-width: 100%;
   color: black;
-
   padding: 1px 15px;
   border-radius: 3px;
-  margin: 20px auto;
+  margin: 20px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
-#div2 {
+#divpic1 {
   background-color: white;
   padding: 10px;
   color: black;
   border-radius: 3px;
-  margin: 20px auto;
-  width: 800px;
+  max-width: 800px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 20px;
 }
 
-#div3 {
+#divpic2 {
+  background-color: white;
+  padding: 10px;
+  color: black;
+  border-radius: 3px;
+  max-width: 400px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 20px;
+}
+
+#divtext2 {
   background-color: white;
   padding: 20px;
   color: black;
   border-radius: 3px;
-  margin: 10px auto;
+  margin: 20px;
+  max-width: 100%;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+#divtextwrapper {
+  display: inline-block;
+  max-width: 400px;
+  vertical-align: top;
+}
+
+#div1 {
+  height: 100%;
+  vertical-align: middle;
+  max-width: 1300px;
+  margin: 50px auto;
+}
+
+#divpicwrapper {
+  display: inline-block;
+  vertical-align: top;
 }

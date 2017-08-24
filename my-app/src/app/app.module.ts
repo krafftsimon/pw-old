@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { Project1Component } from './project1.component';
 import { Project2Component } from './project2.component';
 import { Project3Component } from './project3.component';
+import { Project4Component } from './project4.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Project1Component,
     Project2Component,
-    Project3Component
+    Project3Component,
+    Project4Component
   ],
   imports: [
     BrowserModule,

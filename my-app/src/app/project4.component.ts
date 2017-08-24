@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { routerTransitionAnimation } from './animations/router-transition.animation';
 
 @Component({
-  selector: 'proj3',
-  templateUrl: './project3.component.html',
-  styleUrls: ['./project3.component.css'],
+  selector: 'proj4',
+  templateUrl: './project4.component.html',
+  styleUrls: ['./project4.component.css'],
   animations: [routerTransitionAnimation],
   host: { '[@routerTransitionAnimation]': "'true'",
           '[style.display]': "'block'",               //required for animation
@@ -12,5 +12,5 @@ import { routerTransitionAnimation } from './animations/router-transition.animat
           '[style.width]': "'100%'"}
 })
 
-export class Project3Component {
+export class Project4Component {
 }
