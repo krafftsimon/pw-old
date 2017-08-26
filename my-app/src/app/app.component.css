@@ -24,6 +24,26 @@ md-sidenav {
   box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
+#contact-div {
+  position: fixed;
+  top: 100px;
+  right: 6px;
+  z-index: 12;
+  width: 250px;
+  text-align: center;
+  margin: 0 130px 0 auto;
+  background-color: #68EFAD;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 20px 10px;
+  line-height: 40px;
+  color: black;
+}
+
+.contact-icon {
+  vertical-align: middle;
+}
+
 .header {
   overflow: hidden;
   background-color: #691A99;

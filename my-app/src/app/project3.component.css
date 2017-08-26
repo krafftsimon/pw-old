@@ -5,8 +5,9 @@
   color: black;
   padding: 1px 15px;
   border-radius: 3px;
-  margin: 20px;
+  margin: 20px 10px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  text-align: justify;
 }
 
 #divpic1 {
@@ -14,10 +15,13 @@
   padding: 10px;
   color: black;
   border-radius: 3px;
-  max-width: 400px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  margin: 20px;
+  margin: 20px 10px;
+  max-width: 250px;
+}
+
+h3 {
+  text-align: center;
 }
 
 #divpic2 {
@@ -25,10 +29,13 @@
   padding: 10px;
   color: black;
   border-radius: 3px;
-  max-width: 400px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  margin: 20px;
+  margin: 10px 10px;
+}
+
+#github-button {
+    font-weight: bold;
+    font-size: 16;
 }
 
 #divtext2 {
@@ -36,7 +43,7 @@
   padding: 20px;
   color: black;
   border-radius: 3px;
-  margin: 20px;
+  margin: 20px 10px;
   max-width: 100%;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
 }
@@ -50,12 +57,12 @@
 #div1 {
   height: 100%;
   vertical-align: middle;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 50px auto;
+  text-align: center;
 }
 
 #divpicwrapper {
   display: inline-block;
-  max-width: 400px;
   vertical-align: top;
 }

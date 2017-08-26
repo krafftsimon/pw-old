@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { routerTransitionAnimation } from './animations/router-transition.animation';
 
 @Component({
-  selector: 'proj4',
-  templateUrl: './project4.component.html',
-  styleUrls: ['./project4.component.css'],
+  selector: 'job-history',
+  templateUrl: './job-history.component.html',
+  styleUrls: ['./job-history.component.css'],
   animations: [routerTransitionAnimation],
   host: { '[@routerTransitionAnimation]': "'true'",
           '[style.display]': "'block'",               //required for animation
@@ -12,7 +12,7 @@ import { routerTransitionAnimation } from './animations/router-transition.animat
           '[style.width]': "'100%'"}
 })
 
-export class Project4Component {
+export class JobHistoryComponent {
 
   openPosterPresentation(): void {
     window.open("../assets/Poster_Presentation_Final_G15.pdf");
