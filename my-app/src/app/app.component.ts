@@ -13,7 +13,12 @@ import { contactBoxAnimation } from './animations/contact-box.animation';
 export class AppComponent {
   projectsListActive: boolean = false;
   contactBoxActive: boolean = false;
-  projects: Submenu[] = [{name: "Web App", link: "/project1"}, {name: "Java Mini Game", link: "/project2"}, {name: "Pipelined Processor", link: "/project3"}, {name: "RFID tag", link: "/project4"}];
+  sideNavActive: boolean = true;
+  projects: Submenu[] = [{name: "Web App", link: "/project1"},
+                        {name: "Java Mini Game", link: "/project2"},
+                        {name: "Pipelined Processor", link: "/project3"},
+                        {name: "RFID tag", link: "/project4"},
+                        {name: "IoT", link: "/project5"}];
   selectedItem: string;
 
 
@@ -23,6 +28,10 @@ export class AppComponent {
 
   toggleContactBox(): void {
     this.contactBoxActive = !this.contactBoxActive;
+  }
+
+  sideNavIconToggle(): void {
+    this.sideNavActive = !this.sideNavActive
   }
 
   onSelect(item: string): void {

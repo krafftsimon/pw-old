@@ -1,6 +1,6 @@
 <div class="container">
   <md-sidenav-container>
-    <md-sidenav mode="side" opened="true">
+    <md-sidenav #sidenav mode="side" opened="true">
       <span class="name"> <h2 routerLink="/home"> Simon Krafft </h2> </span>
       <md-divider></md-divider>
       <md-nav-list>
@@ -44,24 +44,30 @@
     </md-sidenav>
 
     <div class="header">
-      <span class="title"> Computer Engineer | McGill University</span>
+
+      <span class="title">
+        <fa name="arrow-left" *ngIf="sideNavActive" (click)="sidenav.toggle(); sideNavIconToggle()"></fa>
+        <fa name="arrow-right" *ngIf="!sideNavActive" (click)="sidenav.toggle(); sideNavIconToggle()"></fa>
+        &nbsp; &nbsp; Computer Engineer | McGill University</span>
       <span class="example-spacer"></span>
       <button md-button class="float-right" (click)="openResume()">RESUME</button>
       <button md-button class="float-right">LINKEDIN</button>
       <button md-button class="float-right" (click)="toggleContactBox()">CONTACT ME</button>
-
     </div>
 
-
     <div class="wrapper">       <!-- position relative, need to resize router outlet elements -->
+      <div class="sideNavIcon">
+
+      </div>
       <router-outlet></router-outlet>  <!-- position absolute -->
     </div>
 
   </md-sidenav-container>
 
+
+
   <div id="contact-div" *ngIf="contactBoxActive" [@contactBoxAnimation]="''">
     <md-icon class="contact-icon"> phone </md-icon><span> 914 620 7262 </span><br>
     <md-icon class="contact-icon"> email </md-icon><span> krafftsimon@gmail.com </span>
   </div>
-
 </div>

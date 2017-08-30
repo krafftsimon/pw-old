@@ -14,6 +14,10 @@
 .name {
   text-align: center;
 }
+
+.test {
+  display: inline-block;
+}
 md-sidenav-container {
   height: 100%;
   background-color: rgba(214,214,214, 1);
@@ -24,10 +28,15 @@ md-sidenav {
   box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
+
+fa:hover {
+  color: #afafaf;
+}
+
 #contact-div {
   position: fixed;
   top: 100px;
-  right: 6px;
+  right: 10px;
   z-index: 12;
   width: 250px;
   text-align: center;
@@ -38,6 +47,25 @@ md-sidenav {
   padding: 20px 10px;
   line-height: 40px;
   color: black;
+}
+
+@media only screen and (max-width: 1332px) {
+  #contact-div {
+    top: 190px !important;
+    right: 25px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  #contact-div {
+    top: 240px !important;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #contact-div {
+    top: 300px !important;
+  }
 }
 
 .contact-icon {
@@ -70,7 +98,7 @@ h2:hover {
 }
 
 .title {
-  margin: 20px;
+  margin: 20px 1px;
   font-size: 36px;
   display: inline-block;
 }
@@ -82,6 +110,7 @@ h2:hover {
 button {
   margin: 30px 0;
 }
+
 
 md-list-item {
 
