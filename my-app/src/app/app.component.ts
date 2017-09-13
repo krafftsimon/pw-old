@@ -18,12 +18,14 @@ export class AppComponent {
                         {name: "Java Mini Game", link: "/project2"},
                         {name: "Pipelined Processor", link: "/project3"},
                         {name: "RFID tag", link: "/project4"},
-                        {name: "IoT", link: "/project5"}];
+                        {name: "IoT", link: "/project5"},
+                        {name: "Fractal", link: "/project6"}];
   selectedItem: string;
 
 
   toggleProjectsList(): void {
     this.projectsListActive = !this.projectsListActive;
+    console.log(this.projectsListActive);
   }
 
   toggleContactBox(): void {
@@ -39,6 +41,6 @@ export class AppComponent {
   }
 
   openResume(): void {
-    window.open("../assets/RESUME_SK5.pdf");
+    window.open("../assets/RESUME.pdf");
   }
 }

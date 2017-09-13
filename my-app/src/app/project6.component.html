@@ -1,0 +1,29 @@
+<div id="div1">
+  <div id="divtextwrapper">
+    <div id="divtext1">
+      <h3>Mandelbrot Set Renderer</h3>
+      <p> The MandelBrot Set represents all the points on the complex plane that remain bounded
+          when plugged into the following recurrence relation:</p>
+      <p class="equation">Z<sub>n+1</sub> = Z<sub>n</sub><sup>2</sup> + c  </p>
+      <p>Where: </p>
+      <p class="equation"> Z<sub>0</sub> = c = x + iy </p>
+      <p> For efficiency purposes we select a threshold (usually 2) and we assume that if this threshold is
+          exceeded, then the sequence for that specific number diverges to infinity. As a result we color this point
+          based on the number of iterations it took to go over the limit. If after a certain number of iterations,
+          the threshold is not reached, we color the point in black.</p>
+      <p> The renderer allows the user change the maximum number of iterations, the threshold, the light coefficient
+          and the color scheme. The user can also zoom in and out. </p>
+      <a md-raised-button color="accent" href='http://fractal.krafftsimon.com' class="button"> WEBSITE </a>
+      <a md-raised-button color="accent" href='https://github.com/krafftsimon/fractal-renderer' class="button"> GITHUB </a>
+    </div>
+  </div>
+
+  <div id="divpicwrapper">
+    <div id="divpic1">
+      <img src="../assets/pic13.jpg" style="width:100%; height:auto;">
+    </div>
+    <div id="divpic2">
+      <img src="../assets/pic14.jpg" style="width:100%; height:auto;">
+    </div>
+  </div>
+</div>

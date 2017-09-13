@@ -14,6 +14,7 @@ import { Project2Component } from './project2.component';
 import { Project3Component } from './project3.component';
 import { Project4Component } from './project4.component';
 import { Project5Component } from './project5.component';
+import { Project6Component } from './project6.component';
 import { JobHistoryComponent } from './job-history.component';
 import { SkillsComponent } from './skills.component';
 
@@ -27,6 +28,7 @@ import { SkillsComponent } from './skills.component';
     Project3Component,
     Project4Component,
     Project5Component,
+    Project6Component,
     JobHistoryComponent,
     SkillsComponent
   ],
