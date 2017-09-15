@@ -13,8 +13,17 @@ import { routerTransitionAnimation } from './animations/router-transition.animat
 })
 
 export class SkillsComponent {
+  skillsLeft: {name: string, star: string, emptyStar: string}[] = [{name:"HTML", star:"★★★", emptyStar:"☆"},
+                                                                  {name:"CSS", star:"★★★", emptyStar:"☆"},
+                                                                  {name:"JavaScript", star:"★★", emptyStar:"☆☆"},
+                                                                  {name:"Angular 2+", star:"★★★", emptyStar:"☆"},
+                                                                  {name:"TypeScript", star:"★★", emptyStar:"☆☆"},
+                                                                  {name:"English", star:"★★★★", emptyStar:""}]
 
-  openPosterPresentation(): void {
-    window.open("../assets/Poster_Presentation_Final_G15.pdf");
-  }
+  skillsRight: {name: string, star: string, emptyStar: string}[] = [{name:"Java", star:"★★", emptyStar:"☆☆"},
+                                                                    {name:"C++", star:"★★", emptyStar:"☆☆"},
+                                                                    {name:"Python", star:"★★", emptyStar:"☆☆"},
+                                                                    {name:"VHDL", star:"★★", emptyStar:"☆☆"},
+                                                                    {name:"ARM Assembly", star:"★", emptyStar:"☆☆☆"},
+                                                                    {name:"French", star:"★★★★", emptyStar:""}]
 }

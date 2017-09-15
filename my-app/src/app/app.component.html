@@ -50,8 +50,8 @@
         <fa name="arrow-right" *ngIf="!sideNavActive" (click)="sidenav.toggle(); sideNavIconToggle()"></fa>
         &nbsp; &nbsp; Computer Engineer | McGill University</span>
       <span class="example-spacer"></span>
-      <button md-button class="float-right" (click)="openResume()">RESUME</button>
       <button md-button class="float-right">LINKEDIN</button>
+      <button md-button class="float-right" (click)="openResume()">RESUME</button>
       <button md-button class="float-right" (click)="toggleContactBox()">CONTACT ME</button>
     </div>
 
@@ -64,7 +64,7 @@
 
 
   <div id="contact-div" *ngIf="contactBoxActive" [@contactBoxAnimation]="''">
-    <md-icon class="contact-icon"> phone </md-icon><span> 914 620 7262 </span><br>
+    <md-icon class="contact-icon"> phone </md-icon><span> 914-620-7262 </span><br>
     <md-icon class="contact-icon"> email </md-icon><span> krafftsimon@gmail.com </span>
   </div>
 </div>

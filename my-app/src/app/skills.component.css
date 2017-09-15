@@ -1,71 +1,59 @@
+@media only screen and (max-width: 932px) {
+  .container {
+    display: inline !important;
+  }
 
-#divtext1 {
-  background-color: white;
-  max-width: 100%;
+  .left {
+    width: 100% !important;
+  }
+
+  .right {
+    width: 100% !important;
+  }
+}
+
+.container {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  color: gold;
+}
+
+.empty-star {
   color: black;
-  padding: 1px 15px;
-  border-radius: 3px;
-  margin: 20px 10px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
-p {
-  text-align: justify;
-}
-
-button {
-  margin: 20px auto;
-  font-weight: bold;
-}
-
-h3 {
-  text-align: center;
-}
-
-#divpic1 {
+.skill-box {
   background-color: white;
-  padding: 10px;
-  color: black;
   border-radius: 3px;
+  margin: 30px 30px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-  margin: 20px 10px;
-}
-
-#divpic2 {
-  background-color: white;
-  padding: 10px;
   color: black;
-  border-radius: 3px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-  margin: 20px 10px;
+  height: 60px;
+  line-height: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  transition: all .2s ease-in-out;
 }
 
-#divtext2 {
-  background-color: white;
-  padding: 20px;
-  color: black;
-  border-radius: 3px;
-  margin: 20px 10px;
-  max-width: 100%;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+.skill-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
-#divtextwrapper {
-  display: inline-block;
-  max-width: 550px;
-  vertical-align: top;
+.seperation {
 }
 
-#div1 {
-  height: 100%;
-  vertical-align: middle;
-  max-width: 1200px;
-  margin: 50px auto;
-  text-align: center;
+.left {
+  width: 40%;
 }
 
-#divpicwrapper {
-  display: inline-block;
-  max-width: 600px;
-  vertical-align: top;
+.right {
+  width: 40%;
 }
