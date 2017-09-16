@@ -1,4 +1,4 @@
-@media only screen and (max-width: 932px) {
+@media only screen and (max-width: 1038px) {
   .container {
     display: inline !important;
   }
@@ -32,11 +32,11 @@
   margin: 30px 30px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
   color: black;
-  height: 60px;
+  min-height: 60px;
   line-height: 55px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   transition: all .2s ease-in-out;
