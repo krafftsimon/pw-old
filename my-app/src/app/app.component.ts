@@ -14,12 +14,12 @@ export class AppComponent {
   projectsListActive: boolean = false;
   contactBoxActive: boolean = false;
   sideNavActive: boolean = true;
-  projects: Submenu[] = [{name: "Web App", link: "/project1"},
+  projects: Submenu[] = [{name: "Gym Progress Tracker", link: "/project1"},
                         {name: "Java Mini Game", link: "/project2"},
                         {name: "Pipelined Processor", link: "/project3"},
-                        {name: "RFID tag", link: "/project4"},
+                        {name: "RFID Tag", link: "/project4"},
                         {name: "IoT", link: "/project5"},
-                        {name: "Fractal", link: "/project6"}];
+                        {name: "Fractal Renderer", link: "/project6"}];
   selectedItem: string;
 
 
