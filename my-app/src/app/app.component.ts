@@ -19,7 +19,8 @@ export class AppComponent {
                         {name: "Pipelined Processor", link: "/project3"},
                         {name: "RFID Tag", link: "/project4"},
                         {name: "IoT", link: "/project5"},
-                        {name: "Fractal Renderer", link: "/project6"}];
+                        {name: "Fractal Renderer", link: "/project6"},
+                        {name: "Online Pong Game", link: "/project7"}];
   selectedItem: string;
 
 
@@ -42,5 +43,9 @@ export class AppComponent {
 
   openResume(): void {
     window.open("../assets/RESUME.pdf");
+  }
+
+  openLinkedin(): void {
+    window.open("https://www.linkedin.com/in/simon-krafft-50611714a");
   }
 }

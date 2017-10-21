@@ -50,7 +50,7 @@
         <fa name="arrow-right" *ngIf="!sideNavActive" (click)="sidenav.toggle(); sideNavIconToggle()"></fa>
         &nbsp; &nbsp; Computer Engineer | McGill University</span>
       <span class="example-spacer"></span>
-      <button md-button class="float-right">LINKEDIN</button>
+      <button md-button class="float-right" (click)="openLinkedin()">LINKEDIN</button>
       <button md-button class="float-right" (click)="openResume()">RESUME</button>
       <button md-button class="float-right" (click)="toggleContactBox()">CONTACT ME</button>
     </div>

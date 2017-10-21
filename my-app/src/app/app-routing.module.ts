@@ -8,6 +8,7 @@ import { Project3Component } from './project3.component';
 import { Project4Component } from './project4.component';
 import { Project5Component } from './project5.component';
 import { Project6Component } from './project6.component';
+import { Project7Component } from './project7.component';
 import { JobHistoryComponent } from './job-history.component';
 import { SkillsComponent } from './skills.component';
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'project4',  component: Project4Component },
   { path: 'project5',  component: Project5Component },
   { path: 'project6',  component: Project6Component },
+  { path: 'project7',  component: Project7Component },
   { path: 'job-history',  component: JobHistoryComponent },
   { path: 'skills',  component: SkillsComponent },
 ];
