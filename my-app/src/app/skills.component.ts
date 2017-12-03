@@ -16,6 +16,7 @@ export class SkillsComponent {
   skillsLeft: {name: string, star: string, emptyStar: string}[] = [{name:"HTML", star:"★★★", emptyStar:"☆"},
                                                                   {name:"JavaScript", star:"★★★", emptyStar:"☆"},
                                                                   {name:"Angular 2+", star:"★★★", emptyStar:"☆"},
+                                                                  {name:"Redux", star:"★★", emptyStar:"☆☆"},
                                                                   {name:"Express.js", star:"★★", emptyStar:"☆☆"},
                                                                   {name:"Java", star:"★★", emptyStar:"☆☆"},
                                                                   {name:"C++", star:"★★", emptyStar:"☆☆"},
@@ -24,9 +25,10 @@ export class SkillsComponent {
 
   skillsRight: {name: string, star: string, emptyStar: string}[] = [{name:"CSS", star:"★★★", emptyStar:"☆"},
                                                                     {name:"TypeScript", star:"★★", emptyStar:"☆☆"},
+                                                                    {name:"React", star:"★★", emptyStar:"☆☆"},
                                                                     {name:"Node.js", star:"★★", emptyStar:"☆☆"},
                                                                     {name:"Socket.io", star:"★★", emptyStar:"☆☆"},
                                                                     {name:"VHDL", star:"★★", emptyStar:"☆☆"},
-                                                                    {name:"ARM Assembly", star:"★", emptyStar:"☆☆☆"},
+                                                                    {name:"ARM Assembly", star:"★★", emptyStar:"☆☆"},
                                                                     {name:"French", star:"★★★★", emptyStar:""}]
 }

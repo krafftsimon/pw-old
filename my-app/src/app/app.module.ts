@@ -5,7 +5,7 @@ import { MaterialModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 import 'hammerjs';
 
-import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
