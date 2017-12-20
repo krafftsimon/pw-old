@@ -49,30 +49,6 @@ fa:hover {
   color: black;
 }
 
-@media only screen and (max-width: 1332px) {
-  #contact-div {
-    top: 190px !important;
-    right: 25px;
-  }
-}
-
-@media only screen and (max-width: 1020px) {
-  #contact-div {
-    top: 240px !important;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  #contact-div {
-    top: 300px !important;
-    right: -60px;
-  }
-
-  .header {
-    position: static !important;
-  }
-}
-
 .contact-icon {
   vertical-align: middle;
 }
@@ -118,4 +94,61 @@ button {
 
 .example-spacer {
   flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 1360px) {
+  .title {
+    width: 100%;
+  }
+
+  .float-right {
+    float: none;
+  }
+
+  button {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 1332px) {
+  #contact-div {
+    top: 190px;
+    right: 25px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  #contact-div {
+    top: 240px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 898px) {
+  .title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #contact-div {
+    top: 300px;
+    right: -60px;
+  }
+
+  .header {
+    position: static;
+    padding: 5px 10px;
+  }
+
+  .title {
+    margin: 10px 0 10px 0;
+  }
+
+  .title fa {
+    font-size: 36px;
+  }
 }
