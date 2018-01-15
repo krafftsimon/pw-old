@@ -1,0 +1,75 @@
+
+#div-text1 {
+  background-color: white;
+  max-width: 100%;
+  color: black;
+  padding: 1px 15px;
+  border-radius: 3px;
+  margin: 20px 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#div-pic1 {
+  background-color: white;
+  padding: 10px;
+  color: black;
+  border-radius: 3px;
+  max-width: 650px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  margin: 20px 10px;
+}
+
+#div-pic2 {
+  background-color: white;
+  padding: 10px;
+  color: black;
+  border-radius: 3px;
+  max-width: 400px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  margin: 20px 10px;
+}
+
+#div-text2 {
+  background-color: white;
+  padding: 20px 20px;
+  color: black;
+  border-radius: 3px;
+  margin: 20px 10px;
+  max-width: 100%;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+#github-button {
+    font-weight: bold;
+    font-size: 16;
+}
+
+#div-text-wrapper {
+  display: inline-block;
+  max-width: 400px;
+  vertical-align: top;
+}
+
+#div1 {
+  height: 100%;
+  vertical-align: middle;
+  max-width: 1300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#div-pic-wrapper {
+  max-width: 400px;
+  display: inline-block;
+  vertical-align: top;
+}

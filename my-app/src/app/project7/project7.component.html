@@ -1,0 +1,37 @@
+<div id="div1">
+  <div id="div-text-wrapper">
+    <div id="div-text1">
+      <h3>Online Multiplayer Pong game</h3>
+      <p> This mini-game was created using the JavaScript library Socket.io, which enables
+          realtime communication between the clients and the server.</p>
+      <p> It is structured using the Authoritative Server approach. This means that the client tells the
+          server what it wishes to do, and the server decides how to change the game state. The client can never
+          directly modify the state of the game. The main purpose of this architecture is to make cheating a lot harder.
+          In this game for example, the client cannot cheat by teleporting its racket right under the ball, it can only
+          tell the server which keys were pressed. Upon receving the inputs, the server will apply those inputs and send the new position
+          to all the clients.</p>
+      <p> To hide the latency from the players and make the game more enjoyable, three techniques were used; Client-Side Prediction,
+          Server Reconciliation, and Interpolation.</p>
+      <p> Client-Side Prediction consists in showing the player, the result of their actions without waiting for the server. Once the client
+          receives the true state of the game it can either correct the position of the player (incorrect prediction) or
+          do nothing (correct prediction). </p>
+      <p> Server Reconciliation is used to solve the synchronization issues between the server and the client when using Client-Side Prediction.</p>
+      <p> Since the server sends updates to the clients only once every 100 ms, the enemy players will jump to the new position on every
+          new update, instead of smoothly moving there. Interpolation solves this problem (to some extent), by showing the player what happens in between.
+          Say at t = 100, the client receives data. Since the client knows the
+          position at t = 0, from t = 100 to t = 200, it can show what the player did from t = 0 to t = 100. The only downside
+          is that the movements will be a bit late.
+      <a md-raised-button color="accent" target="_blank" href='http://pong.krafftsimon.com' class="button"> WEBSITE </a>
+      <a md-raised-button color="accent" target="_blank" href='https://github.com/krafftsimon/mp-pong-game' class="button"> GITHUB </a>
+    </div>
+  </div>
+
+  <div id="div-pic-wrapper">
+    <div id="div-pic1">
+      <img src="../assets/pic15.jpg" style="width:100%; height:auto;">
+    </div>
+    <div id="div-pic2">
+      <img src="../assets/pic16.jpg" style="width:100%; height:auto;">
+    </div>
+  </div>
+</div>

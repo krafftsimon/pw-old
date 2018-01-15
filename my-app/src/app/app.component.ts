@@ -24,8 +24,12 @@ export class AppComponent {
     {name: "IoT", link: "/project5"}
   ];
   selectedItem: string;
+  sidenavMode: string;
 
-
+  constructor() {
+    console.log(window.innerWidth);
+    this.sidenavMode = window.innerWidth < 616 ? "over" : "side"
+  }
   toggleProjectsList(): void {
     this.projectsListActive = !this.projectsListActive;
     console.log(this.projectsListActive);
