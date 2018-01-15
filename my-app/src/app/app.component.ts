@@ -13,7 +13,6 @@ import { contactBoxAnimation } from './animations/contact-box.animation';
 export class AppComponent {
   projectsListActive: boolean = false;
   contactBoxActive: boolean = false;
-  sideNavActive: boolean = true;
   projects: Submenu[] = [
     {name: "Gym Progress Tracker", link: "/project1"},
     {name: "Online Pong Game", link: "/project7"},
@@ -37,10 +36,6 @@ export class AppComponent {
 
   toggleContactBox(): void {
     this.contactBoxActive = !this.contactBoxActive;
-  }
-
-  sideNavIconToggle(): void {
-    this.sideNavActive = !this.sideNavActive
   }
 
   onSelect(item: string): void {

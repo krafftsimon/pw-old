@@ -113,19 +113,23 @@ button {
   }
 }
 
-@media only screen and (max-width: 1332px) {
-
-}
-
 @media only screen and (max-width: 1020px) {
   .title {
     font-size: 30px;
+  }
+
+  .title fa {
+    font-size: 36px;
   }
 }
 
 @media only screen and (max-width: 898px) {
   .title {
     font-size: 25px;
+  }
+
+  .title fa {
+    font-size: 36px;
   }
 }
 
