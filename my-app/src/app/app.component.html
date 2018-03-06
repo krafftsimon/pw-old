@@ -1,7 +1,7 @@
 
   <mat-sidenav-container class="side-nav-container">
 
-    <mat-sidenav #sidenav [mode]="sidenavMode" opened="true">
+    <mat-sidenav #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'" opened="true">
       <span class="name"> <h2 routerLink="/home"> Simon Krafft </h2> </span>
       <mat-divider></mat-divider>
 

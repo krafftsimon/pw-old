@@ -8,6 +8,7 @@ import {
   MatListModule,
   MatButtonModule,
 } from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
 import { RouterModule } from '@angular/router';
 import 'hammerjs';
 
@@ -49,6 +50,7 @@ import { SkillsComponent } from './skills/skills.component';
     MatIconModule,
     MatListModule,
     MatButtonModule,
+    LayoutModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFontAwesomeModule

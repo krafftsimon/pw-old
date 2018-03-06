@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
+import { MediaMatcher } from '@angular/cdk/layout';
 import { listAnimation } from './animations/list.animation'
 import { Submenu } from './submenu';
 import { routerTransitionAnimation } from './animations/router-transition.animation';
@@ -15,7 +16,7 @@ export class AppComponent {
   contactBoxActive: boolean = false;
   projects: Submenu[] = [
     {name: "Gym Progress Tracker", link: "/project1"},
-    {name: "VotE", link: "/project8"},
+    {name: "React / Redux App", link: "/project8"},
     {name: "Online Pong Game", link: "/project7"},
     {name: "Fractal Renderer", link: "/project6"},
     {name: "Java Mini Game", link: "/project2"},
@@ -24,15 +25,21 @@ export class AppComponent {
     {name: "IoT", link: "/project5"},
   ];
   selectedItem: string;
-  sidenavMode: string;
+  mobileQuery: MediaQueryList;
+  _mobileQueryListener: () => void;
 
-  constructor() {
-    console.log(window.innerWidth);
-    this.sidenavMode = window.innerWidth < 616 ? "over" : "side"
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    this.mobileQuery = media.matchMedia('(max-width: 790px)');
+    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
+    this.mobileQuery.addListener(this._mobileQueryListener);
   }
+
+  ngOnDestroy(): void {
+    this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
   toggleProjectsList(): void {
     this.projectsListActive = !this.projectsListActive;
-    console.log(this.projectsListActive);
   }
 
   toggleContactBox(): void {
