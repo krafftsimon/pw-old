@@ -1,5 +1,5 @@
 const express = require('express');
-const path = require ('path');
+const path = require('path');
 const app = express();
 
 // Serve static files
@@ -14,9 +14,6 @@ app.get('*', (req, res) => {
 const port = '4200';
 app.set('port', port);
 
-// Create the HTTP Server
-const server = http.createServer(app);
-
-server.listen(port, () => {
-  console.log(`Running on localhost:${port}`);
-});
+app.listen(port, () => {
+  console.log(`listening on port ${port}`);
+})
