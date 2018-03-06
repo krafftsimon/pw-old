@@ -22,6 +22,10 @@ h3 {
   text-align: center;
 }
 
+img {
+  display: block;
+}
+
 #div-pic1 {
   background-color: white;
   padding: 10px;

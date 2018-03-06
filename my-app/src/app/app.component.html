@@ -1,60 +1,67 @@
-<div class="container">
-  <md-sidenav-container>
-    <md-sidenav #sidenav [mode]="sidenavMode" opened="true">
-          <span class="name"> <h2 routerLink="/home"> Simon Krafft </h2> </span>
-          <md-divider></md-divider>
-          <md-nav-list>
-            <md-list-item (click)="toggleProjectsList()">
-              <md-icon md-list-icon>build </md-icon>
-              <span> &nbsp; PROJECTS </span>
-              <span class="example-spacer"></span>
-              <md-icon *ngIf="!projectsListActive"> expand_more </md-icon>
-              <md-icon *ngIf="projectsListActive"> expand_less </md-icon>
-            </md-list-item>
-            <ng-container *ngIf="projectsListActive">
-              <md-list-item *ngFor="let project of projects"
-                            class="sub-list"
-                            [class.selected]="project === selectedItem"
-                            (click)="onSelect(project)"
-                            [@listAnimation]="''"
-                            [routerLink]="project.link">
-                <span> ○ {{project.name}} </span>
-              </md-list-item>
-            </ng-container>
-            <md-list-item [class.selected]="'job history' === selectedItem"
-                          (click)="onSelect('job history')"
-                          routerLink="/job-history">
-              <md-icon md-list-icon>work</md-icon>
-              <span> &nbsp; JOB HISTORY </span>
-              <span class="example-spacer"></span>
-            </md-list-item>
-            <md-list-item [class.selected]="'skills' === selectedItem"
-                          (click)="onSelect('skills')"
-                          routerLink="/skills">
-              <md-icon md-list-icon>list</md-icon>
-              <span> &nbsp; SKILLS </span>
-              <span class="example-spacer"></span>
-            </md-list-item>
-          </md-nav-list>
-    </md-sidenav>
-    <div class="header">
-          <span class="title">
-            <fa name="bars" (click)="sidenav.toggle()"></fa>
-            &nbsp; &nbsp; Computer Engineer | McGill University
-          </span>
+
+  <mat-sidenav-container class="side-nav-container">
+
+    <mat-sidenav #sidenav [mode]="sidenavMode" opened="true">
+      <span class="name"> <h2 routerLink="/home"> Simon Krafft </h2> </span>
+      <mat-divider></mat-divider>
+
+      <mat-nav-list>
+        <mat-list-item (click)="toggleProjectsList()">
+          <mat-icon mat-list-icon>build </mat-icon>
+          <span> &nbsp; PROJECTS </span>
           <span class="example-spacer"></span>
-          <button md-button class="float-right" (click)="openLinkedin()">LINKEDIN</button>
-          <button md-button class="float-right" (click)="openResume()">RESUME </button>
-          <div class="float-right" id="contact-btn">
-            <button md-button class="float-right" (click)="toggleContactBox()"> CONTACT ME </button>
-            <div id="contact-div" *ngIf="contactBoxActive" [@contactBoxAnimation]="''">
-              <md-icon class="contact-icon"> phone </md-icon><span> 914-620-7262 </span><br>
-              <md-icon class="contact-icon"> email </md-icon><span> krafftsimon@gmail.com </span>
-            </div>
+          <mat-icon *ngIf="!projectsListActive"> expand_more </mat-icon>
+          <mat-icon *ngIf="projectsListActive"> expand_less </mat-icon>
+        </mat-list-item>
+
+        <ng-container *ngIf="projectsListActive">
+          <mat-list-item *ngFor="let project of projects"
+                        class="sub-list"
+                        [class.selected]="project === selectedItem"
+                        (click)="onSelect(project)"
+                        [@listAnimation]="''"
+                        [routerLink]="project.link">
+            <span> - {{project.name}} </span>
+          </mat-list-item>
+        </ng-container>
+
+        <mat-list-item [class.selected]="'job history' === selectedItem"
+                      (click)="onSelect('job history')"
+                      routerLink="/job-history">
+          <mat-icon mat-list-icon>work</mat-icon>
+          <span> &nbsp; JOB HISTORY </span>
+          <span class="example-spacer"></span>
+        </mat-list-item>
+
+        <mat-list-item [class.selected]="'skills' === selectedItem"
+                      (click)="onSelect('skills')"
+                      routerLink="/skills">
+          <mat-icon mat-list-icon>list</mat-icon>
+          <span> &nbsp; SKILLS </span>
+          <span class="example-spacer"></span>
+        </mat-list-item>
+      </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="header">
+        <fa class="toggle-sidenav-icon" name="bars" (click)="sidenav.toggle()"></fa>
+        <h1 class="title"> Computer Engineer | McGill University </h1>
+        <span class="example-spacer"></span>
+        <button mat-button class="float-right" (click)="openLinkedin()">LINKEDIN</button>
+        <button mat-button class="float-right" (click)="openResume()">RESUME </button>
+        <div class="float-right" id="contact-btn">
+          <button mat-button class="float-right" (click)="toggleContactBox()"> CONTACT ME </button>
+          <div id="contact-div" *ngIf="contactBoxActive" [@contactBoxAnimation]="''">
+            <mat-icon class="contact-icon"> phone </mat-icon><span> 914-620-7262 </span><br>
+            <mat-icon class="contact-icon"> email </mat-icon><span> krafftsimon@gmail.com </span>
           </div>
-    </div>
-    <div class="wrapper">       <!-- position relative, needed to resize router outlet elements -->
-          <router-outlet></router-outlet>  <!-- position absolute -->
-    </div>
-  </md-sidenav-container>
-</div>
+        </div>
+      </div>
+      <div class="wrapper">       <!-- position relative, needed to resize router outlet elements -->
+        <router-outlet></router-outlet>  <!-- position absolute -->
+      </div>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>

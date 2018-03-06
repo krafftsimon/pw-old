@@ -4,11 +4,18 @@
   margin: 0 auto;
 }
 
-.container {
-  height: 100vh;
-  margin: 0 auto;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+.side-nav-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(214,214,214, 1);
+}
+
+mat-sidenav {
+  width: 250px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 .name {
@@ -19,15 +26,6 @@
   display: inline-block;
 }
 
-md-sidenav-container {
-  height: 100%;
-  background-color: rgba(214,214,214, 1);
-}
-
-md-sidenav {
-  width: 230px;
-  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.5);
-}
 
 fa:hover {
   color: #afafaf;
@@ -62,7 +60,6 @@ fa:hover {
   padding: 20px;
   top: 0px;
   box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 1);
-  opacity: 1 !important;
   position: sticky;
   z-index: 10;
 }
@@ -78,7 +75,7 @@ h2:hover {
 }
 
 .title {
-  margin: 20px 1px;
+  margin: 20px 20px 20px 60px;
   font-size: 36px;
   display: inline-block;
 }
@@ -99,9 +96,19 @@ button {
   flex: 1 1 auto;
 }
 
+.sub-list {
+  overflow: hidden;
+}
+
+.toggle-sidenav-icon {
+  position: absolute;
+  top: 40px;
+  font-size: 36px;
+}
+
 @media only screen and (max-width: 1360px) {
   .title {
-    width: 100%;
+    display: block;
   }
 
   .float-right {
@@ -118,36 +125,57 @@ button {
     font-size: 30px;
   }
 
-  .title fa {
-    font-size: 36px;
+  .toggle-sidenav-icon {
+    top: 20px;
+  }
+
+  .header {
+    padding: 5px 20px;
+  }
+
+  button {
+    margin: 5px 0;
   }
 }
 
 @media only screen and (max-width: 898px) {
   .title {
     font-size: 25px;
+    margin: 7px 0 7px 50px;
   }
 
-  .title fa {
-    font-size: 36px;
+  .toggle-sidenav-icon {
+    top: 3px;
+  }
+
+  .header {
+    padding: 1px 0 5px 10px;
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 560px) {
   #contact-div {
     right: 0;
     left: auto;
   }
 
   .header {
-    padding: 5px 10px;
+    padding: 5px 0 5px 10px;
   }
 
   .title {
-    margin: 10px 0 10px 0;
+    font-size: 18px;
+    margin: 10px 0 10px 50px;
   }
 
-  .title fa {
-    font-size: 36px;
+  .toggle-sidenav-icon {
+    top: 5px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+
+  .title {
+    margin: 15px 0 10px 50px;
   }
 }

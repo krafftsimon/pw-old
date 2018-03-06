@@ -1,7 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from '@angular/material';
+import {
+  MatSidenavModule,
+  MatDividerModule,
+  MatIconModule,
+  MatListModule,
+  MatButtonModule,
+} from '@angular/material';
 import { RouterModule } from '@angular/router';
 import 'hammerjs';
 
@@ -16,6 +22,7 @@ import { Project4Component } from './project4/project4.component';
 import { Project5Component } from './project5/project5.component';
 import { Project6Component } from './project6/project6.component';
 import { Project7Component } from './project7/project7.component';
+import { Project8Component } from './project8/project8.component';
 import { JobHistoryComponent } from './timeline/job-history.component';
 import { SkillsComponent } from './skills/skills.component';
 
@@ -31,12 +38,17 @@ import { SkillsComponent } from './skills/skills.component';
     Project5Component,
     Project6Component,
     Project7Component,
+    Project8Component,
     JobHistoryComponent,
     SkillsComponent
   ],
   imports: [
     BrowserModule,
-    MaterialModule,
+    MatSidenavModule,
+    MatDividerModule,
+    MatIconModule,
+    MatListModule,
+    MatButtonModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFontAwesomeModule

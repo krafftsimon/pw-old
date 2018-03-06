@@ -14,6 +14,10 @@ h3 {
   text-align: center;
 }
 
+img {
+  display: block;
+}
+
 #div-text1 h4 {
   text-align: center;
 }

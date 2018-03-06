@@ -15,12 +15,13 @@ export class AppComponent {
   contactBoxActive: boolean = false;
   projects: Submenu[] = [
     {name: "Gym Progress Tracker", link: "/project1"},
+    {name: "VotE", link: "/project8"},
     {name: "Online Pong Game", link: "/project7"},
     {name: "Fractal Renderer", link: "/project6"},
     {name: "Java Mini Game", link: "/project2"},
     {name: "Pipelined Processor", link: "/project3"},
     {name: "RFID Tag", link: "/project4"},
-    {name: "IoT", link: "/project5"}
+    {name: "IoT", link: "/project5"},
   ];
   selectedItem: string;
   sidenavMode: string;
